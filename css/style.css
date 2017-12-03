@@ -1,0 +1,24 @@
+body {
+    padding-top: 50px;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.navbar-brand {
+    padding: 0px;        
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#table-placeholder {
+    margin-top: 15px;
+}

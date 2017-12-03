@@ -1,0 +1,125 @@
+table.EANDiffTable {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+}
+
+table.EANDiffTable> thead  {
+	border: 1px solid #ddd;
+}
+
+table.EANDiffTable> thead > tr > th {
+	background-color: #f2f2f2;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	font-weight: 600;
+}
+
+table.EANDiffTable > tbody > tr > td {
+	border-top: 1px solid #ddd;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 43px;
+}
+
+table.EANDiffTable > tbody > tr.Active > td {
+	background-color: #fbfbfb;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell {
+	text-align: left;
+}
+
+
+table.EANDiffTable > tbody > tr > td.StateCell .State {
+	width: 100px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	margin: 3px;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State > .Text {
+	float: left;
+	padding: 5px;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State > .Undo {
+	float: right;
+	padding: 3px;
+    padding-top: 8px;
+    padding-right: 6px;
+	display: none;
+    font-size: 11px;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State:hover > .Undo {
+	display: block;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Unassign {
+	border-color: #dddddd;
+	background-color: #fffefa;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Unassigned {
+	border-color: #dddddd;
+	background-color: #fefefe;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Accept {
+	border-color: #4cae4c;
+	color: #4cae4c;
+	background-color: #dff0d8;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Accepted {
+	border-color: #4cae4c;
+	color: #ffffff;
+	background-color: #4cae4c;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Reject {
+	border-color: #a94442;
+	color: #a94442;
+	background-color: #ebccd1;
+}
+
+table.EANDiffTable > tbody > tr > td.StateCell .State.Rejected {
+	border-color: #a94442;
+	color: #ffffff;
+	background-color: #a94442;
+}
+
+table.EANDiffTable > tbody > tr > td.ActionsCell .AcceptButton {
+	border: 1px solid #4cae4c;
+	background-color: #dff0d8;
+	color: #4cae4c;
+	padding: 5px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+table.EANDiffTable > tbody > tr > td.ActionsCell .AcceptButton:hover {
+	background-color: #bee4ae;
+}
+
+table.EANDiffTable > tbody > tr > td.ActionsCell .RejectButton {
+	border: 1px solid #a94442;
+	background-color: #ebccd1;
+	color: #a94442;
+	padding: 5px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+table.EANDiffTable > tbody > tr > td.ActionsCell .RejectButton:hover {
+	background-color: #ff95a6;
+}
+
+table.EANDiffTable > tbody > tr > td.DescriptionCell {
+	font-family: 'Consolas';
+}
